@@ -9,9 +9,8 @@ Rails.application.routes.draw do
           namespace 'go_link' do
             controller :admin do
               get :new
-              get :show
               post :create
-              get :settings
+              get :index
               post :save_settings
             end
           end
