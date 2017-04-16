@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Your Outbound Links</h4>
+        <%= link_to "add new", admin_plugins_go_link_new_path, class: 'pull-right btn btn-primary' %>
+    </div>
+    <table class="table">
+      <thead>
+        <th>Slug</th>
+        <th>Destination</th>
+        <th>Clicks</th>
+      </thead>
+      <tbody>
+        <% @go_links.each do |link| %>
+          <tr>
+            <td><%= link.slug %></td>
+            <td><%= link.destination %></td>
+            <td><%= link.clicks %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>

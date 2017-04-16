@@ -1,0 +1,14 @@
+{
+  "title": "Go Links",
+  "descr": "",
+  "key": "go_link", // must be the name of the folder of your plugin, sample: app/views/plugins/<my_plugin> ==> 'my_plugin'
+  "helpers": [
+    "Plugins::GoLink::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["go_link_on_active"],
+    "on_inactive": ["go_link_on_inactive"],
+    "plugin_options": ["go_link_on_plugin_options"]
+    //here you can add all your hooks (read documentation)
+  }
+}
