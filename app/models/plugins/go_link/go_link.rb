@@ -1,4 +1,5 @@
 class Plugins::GoLink::GoLink < ActiveRecord::Base
+  # enable below for multi-site
   # belongs_to :site, class_name: "CamleonCms::Site"
 
   def click!
