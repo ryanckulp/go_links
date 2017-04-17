@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
     scope PluginRoutes.system_info["relative_url_root"] do
 
-      get 'go/:slug', to: 'plugins/go_link/frontend#show'
+      get 'go/:slug', to: 'plugins/go_link/front#show'
 
       # admin panel
       scope :admin, as: 'admin', path: PluginRoutes.system_info['admin_path_name'] do

@@ -24,6 +24,6 @@ module Plugins::GoLink::MainHelper
   # args: {plugin (Hash), links (Array)}
   # permit to add unlimmited of links...
   def go_link_on_plugin_options(args)
-    args[:links] << link_to('Settings', admin_plugins_go_link_settings_path)
+    args[:links] << link_to('Settings', admin_plugins_go_link_index_path)
   end
 end

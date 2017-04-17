@@ -1,4 +1,4 @@
-class Plugins::GoLink::FrontendController < CamaleonCms::Apps::PluginsFrontendController
+class Plugins::GoLink::FrontController < CamaleonCms::Apps::PluginsFrontController
   include Plugins::GoLink::MainHelper
   before_action :set_link, only: [:show]
 
