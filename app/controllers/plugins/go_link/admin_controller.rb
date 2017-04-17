@@ -1,16 +1,8 @@
 class Plugins::GoLink::AdminController < CamaleonCms::Apps::PluginsAdminController
   include Plugins::GoLink::MainHelper
-  before_action :set_link, only: [:show]
 
   def new
     @go_link = Plugins::GoLink::GoLink.new
-  end
-
-  def show
-    if @link
-      @link.click!
-      redirect_to @link.destination
-    end
   end
 
   def create
@@ -38,10 +30,6 @@ class Plugins::GoLink::AdminController < CamaleonCms::Apps::PluginsAdminControll
   # add custom methods below ....
 
   private
-
-    def set_link
-      @link = Plugins::GoLink::GoLink.find_by(slug: params[:slug])
-    end
 
     def go_link_params
       params.require(:go_link).permit(:slug, :destination)
