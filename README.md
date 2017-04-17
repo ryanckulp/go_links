@@ -1,11 +1,15 @@
 # GoLinks
-Dead simple link shortening and click tracking plugin for Cameleon CMS.
+Link shortening and click tracking plugin for Camaleon CMS.
 
-**Link Management**
+**Manage links**
+
 ![GoLinks Manage Links](https://raw.githubusercontent.com/ryanckulp/go_links/master/test/dummy/public/camaleon-go-links-manage-links.png)
 
-**Link Creation**
+**Create links**
+
 ![GoLinks Create Link](https://raw.githubusercontent.com/ryanckulp/go_links/master/test/dummy/public/camaleon-go-links-create-link.png)
+
+**Features**
 
 GoLinks turns long URLs into branded, "/go/some-slug" destinations, which increases click-through engagements and is great for managing messy affiliate links.
 
